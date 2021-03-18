@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import { Route, Switch } from "react-router-dom"
+import styled from 'styled-components';
+
+// Pages
+import Home from  './Pages/Home'
+import Contact from './Pages/Contact'
+
+// Burger Menu and NavBar
+import Navbar from './components/Burger/Navbar'
+import Burger from './components/Burger/Burger'
+import Menu from './components/Burger/Menu'
+
+
+const StyledNavBarContainer = styled.div`
+  position: sticky;
+  top: 0;`
 
 function App() {
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <StyledNavBarContainer>
+    <Navbar/>
+    <Burger modalOpen={modalOpen} setModalOpen={setModalOpen} />
+        <Menu modalOpen={modalOpen} setModalOpen={setModalOpen} />
+    </StyledNavBarContainer>
+      <Switch>
+      <Route exact path="/" render={() => <Home />} />
+      <Route path="/Contact" render={() => <Contact />} />
+      </Switch>
+    </>
   );
 }
 
