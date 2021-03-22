@@ -10,36 +10,27 @@ import thirdPortrait from "../../Images/Thyme.png"
 
 
 const StyledCard = styled.div`
-    
-    
-    border-radius: 10px;
+     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    
     align-items: center;
-   
-    background-color: #ffff;
+   background-color: #ffff;
+   padding: 8px;
 
     img {
-        width: 125px;
-       
-        border: 2px solid red;
+        width: 45%;
+       border: 3px solid #F4C2C2;
       
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 26px;
         line-height: 26px;
         text-align: center;
         font-family: unpack;
+        color: #0A2268;
     }
 
-    p {
-        font-size: 16px;
-        line-height: 26px;
-        text-align: center;
-        font-family: poor story;
-    }
 
 `;
 
@@ -68,7 +59,7 @@ const Project = ({ imageNumber }) => {
                         </>)
                         : (<>
                             <img src={thirdPortrait} alt="Project 3" />
-                            <h2>Stephen K.</h2>
+                            <h2>Code Coffee</h2>
                             
                             <div>
                                 

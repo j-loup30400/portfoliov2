@@ -19,15 +19,17 @@ font-size: 1.5rem;
   transform: ${({ modalOpen }) => modalOpen ? 'translateX(0)' : 'translateX(1)'};
   a {
     font-size: 4rem;
-    padding:8px;
+    padding:16px;
+    text-decoration: none;
     font-weight: bold;
     letter-spacing: 0.5rem;
     font-family: unpack;
     color: black;
     transition: color 0.3s linear;
+    
 
     &:hover {
-      color: darkblue;
+      color: #00E8CE;
     }
   }
 `;

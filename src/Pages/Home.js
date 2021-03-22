@@ -5,6 +5,10 @@ import styled from 'styled-components';
 import Project from "../components/Carousel/Project";
 import Selector from "../components/Carousel/Selector" ;
 
+import Git from "../Images/git.png"
+import Link from "../Images/link.png"
+import CV from "../Images/cv.png"
+
 
 const StyledAboutContainer = styled.div`
  width: 100%;
@@ -15,6 +19,7 @@ const StyledAboutContainer = styled.div`
 
   h1{
     text-align: center; 
+    text-shadow: 5px 5px #F4C2C2;
        font-family: unpack;
        line-height: 54px;
        font-size: 52px;
@@ -34,7 +39,11 @@ const StyledAboutContainer = styled.div`
 
 const StyledCarousel = styled.div`
 
-    background-color: #00E8CE;
+background: linear-gradient(
+180deg
+,#FFFFFF 0%,rgba(255,255,255,0) 100%),linear-gradient(
+360deg
+,#FFFFFF -2.86%,rgba(255,255,255,0) 58.69%),#00E8CE;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +55,40 @@ const StyledCarousel = styled.div`
         display: flex;
         justify-content: center;
     }  
+    h1{
+    text-align: center; 
+    text-shadow: 5px 5px #F4C2C2;
+       font-family: unpack;
+       line-height: 54px;
+       font-size: 52px;
+       color: #0A2268;
+    }`;
+
+const StyledFooter = styled.div`
+display:flex;
+flex-direction:column;
+background: linear-gradient(180deg, #FFFFFF 0%, 
+rgba(255, 255, 255, 0) 100%), #00E8CE;
+
+
+h1{
+    text-align: center; 
+    text-shadow: 5px 5px #F4C2C2;
+       font-family: unpack;
+       line-height: 54px;
+       font-size: 52px;
+       color: #0A2268;
+       margin:0;
+    }
+
+    div {
+     display:flex;
+     flex-direction: row;
+     justify-content: space-around;
+    }
+
 `;
+
 const Home = () => {
     const [carouselImage, setCarouselImage] = useState(0);
    
@@ -64,11 +106,36 @@ const Home = () => {
          </section>
           </StyledAboutContainer> 
          <StyledCarousel>
+          <h1>Projects</h1> 
          <Project imageNumber={carouselImage} />
                 <div>
                     <Selector action={firstImageToggle} actionTwo={secondImageToggle} actionThree={thirdImageToggle} isActive={carouselImage} />
                 </div>
          </StyledCarousel>
+         <StyledFooter>
+         <h1>Socials</h1>
+         <div>
+           <p>
+             <a href="https://www.linkedin.com/in/jeanloup-cayuela-467165204/">
+             <img src={Link} alt="linkedin logo" width="50px" height="50px"></img>
+              </a>
+              
+           </p>
+           
+           <p>
+             <a href="https://drive.google.com/file/d/1duyc8f6jozdpFe8YQoeVE8wIJKVECYfS/view?usp=sharing">
+             <img src={CV} alt="cv" width="50px" height="50px" ></img>
+              </a>
+              
+           </p>
+           <p>
+             <a href="https://github.com/j-loup30400">
+             <img src={Git} alt="git logo" width="50px" height="50px"></img>
+              </a>
+              
+           </p>
+           </div>
+         </StyledFooter>
           </>
     )
 }

@@ -5,7 +5,6 @@ const StyledTitle = styled.div`
  width: 100%;   
      background: linear-gradient(358.47deg, #FFFFFF 1.3%, rgba(255, 255, 255, 0.902552) 10.8%, rgba(255, 255, 255, 0) 98.74%), #00E8CE;
      display: flex;
-    
      margin: 0;
      flex-direction: column;
      color: #0A2268;
