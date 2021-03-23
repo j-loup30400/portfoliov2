@@ -24,11 +24,10 @@ const StyledAboutContainer = styled.div`
        line-height: 54px;
        font-size: 52px;
        color: #0A2268;
-
+     
   }
 
   p{
-    font-family: Poor Story;
     font-size: 26px;
     line-height: 54px;
     text-align: center;
@@ -58,7 +57,7 @@ background: linear-gradient(
     h1{
     text-align: center; 
     text-shadow: 5px 5px #F4C2C2;
-       font-family: unpack;
+       font-family: "unpack-regular";
        line-height: 54px;
        font-size: 52px;
        color: #0A2268;
@@ -74,11 +73,12 @@ rgba(255, 255, 255, 0) 100%), #00E8CE;
 h1{
     text-align: center; 
     text-shadow: 5px 5px #F4C2C2;
-       font-family: unpack;
-       line-height: 54px;
+       font-family: "unpack-regular";
+       line-height: 10px;
        font-size: 52px;
        color: #0A2268;
-       margin:0;
+       margin-top: 10%;
+     
     }
 
     div {
@@ -108,9 +108,9 @@ const Home = () => {
          <StyledCarousel>
           <h1>Projects</h1> 
          <Project imageNumber={carouselImage} />
-                <div>
+            
                     <Selector action={firstImageToggle} actionTwo={secondImageToggle} actionThree={thirdImageToggle} isActive={carouselImage} />
-                </div>
+                
          </StyledCarousel>
          <StyledFooter>
          <h1>Socials</h1>

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Route, Switch } from "react-router-dom"
 import styled from 'styled-components';
+import "./App.css";
 
 // Pages
 import Home from  './Pages/Home'

@@ -18,7 +18,7 @@ const StyledCard = styled.div`
    padding: 8px;
 
     img {
-        width: 45%;
+        width: 40%;
        border: 3px solid #F4C2C2;
       
     }
@@ -27,7 +27,7 @@ const StyledCard = styled.div`
         font-size: 26px;
         line-height: 26px;
         text-align: center;
-        font-family: unpack;
+        font-family: "unpack-regular";
         color: #0A2268;
     }
 

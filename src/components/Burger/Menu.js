@@ -23,7 +23,7 @@ font-size: 1.5rem;
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 0.5rem;
-    font-family: unpack;
+    font-family: "unpack-regular";
     color: black;
     transition: color 0.3s linear;
     

@@ -10,7 +10,7 @@ const StyledTitle = styled.div`
      color: #0A2268;
 
 h2 {
-      font-family: Unpack;
+     font-family: 'unpack-regular';
       font-size: 36px;
       line-height: 24px;
       padding: 8px;  

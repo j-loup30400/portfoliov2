@@ -1,0 +1,15 @@
+@font-face{
+    font-family: "unpack-regular";
+     src:url("./Font/PintassilgoPrints\ -\ Unpack\ Regular.otf")
+}
+@font-face{
+    font-family: "poor-story"; 
+    src:url('./Font/PoorStory-Regular.ttf')
+}
+
+body{
+   
+    font-family: "poor-story";
+}
+
+
