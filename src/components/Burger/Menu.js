@@ -17,6 +17,7 @@ font-size: 1.5rem;
   transition: transform 500ms;
   transform: translateX(-100%);
   transform: ${({ modalOpen }) => modalOpen ? 'translateX(0)' : 'translateX(1)'};
+  
   a {
     font-size: 4rem;
     padding:16px;

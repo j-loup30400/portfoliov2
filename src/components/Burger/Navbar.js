@@ -15,6 +15,9 @@ h2 {
       line-height: 24px;
       padding: 8px;  
 }
+/* @media all and (orientation: landscape) {
+    height:10vh;
+} */
 `;
 
 const Navbar = () => {
