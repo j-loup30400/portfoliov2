@@ -18,15 +18,14 @@ const StyledCard = styled.div`
     align-items: center;
    background: radial-gradient(50% 114.08% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0.744792) 37.32%, rgba(255, 255, 255, 0) 100%), #F4C2C2;
    padding: 8px;
-   height: 60vh;
+   
+   
 
     img {
-      width: 70vw;
+      width: 80vw;
       cursor: pointer;
       outline: none;   
-    
-        
-       
+      
       
     }
 
@@ -39,7 +38,7 @@ const StyledCard = styled.div`
         text-shadow: 5px 5px #F4C2C2;
         margin:0;
     }
-
+    
 
 `;
 
@@ -57,38 +56,79 @@ const Project = ({ imageNumber }) => {
                             <img src={firstPortrait} alt="Project" />
                             </div>
                             <div className="flip-card-back">
-                            <img src={firstPortrait} alt="Project12" 
+                            <img src={firstPortrait} alt="Reverse Project" 
+                            />
+     
+    </div>
+  </div>
+</div>
+                        </>)
+                    : imageNumber === 1
+                        ? (<>
+                      
+                             <div className="flip-card">
+  <div className="flip-card-inner">
+    <div className="flip-card-front">
+                            <img className="ipad" src={secondPortrait} alt="Project 2" />
+                            </div>
+                            <div className="flip-card-back">
+                            <img className="ipad" src={secondPortrait} alt="reverse project 2" 
+                            />
+     
+    </div>
+  </div>
+</div>
+                          
+                        </>)
+                        : imageNumber === 2 
+                        ? (<>
+                           
+                           <div className="flip-card">
+  <div className="flip-card-inner">
+    <div className="flip-card-front">
+                            <img className="ipad" src={thirdPortrait} alt="Project 3" />
+                            </div>
+                            <div className="flip-card-back">
+                            <img className="ipad" src={thirdPortrait} alt="reverse project 3" 
                             />
      
     </div>
   </div>
 </div>
                             
-                           
-                        </>)
-                    : imageNumber === 1
-                        ? (<>
-                            <img src={secondPortrait} alt="Project 2" />
-                            <h2>Code cafe</h2>
-                           
-                          
-                        </>)
-                        : imageNumber === 2 
-                        ? (<>
-                            <img src={thirdPortrait} alt="Project 3" />
-                            <h2>Hackathon</h2>
-                            
                         </>)
                         : imageNumber === 3 
                        
                        ?(<>
-                        <img src={fourthPortrait} alt="Projet 4" />
-                        <h2>La Nurserie</h2>
+                        <div className="flip-card">
+  <div className="flip-card-inner">
+    <div className="flip-card-front">
+                            <img className="ipad" src={fourthPortrait} alt="Project 4" />
+                            </div>
+                            <div className="flip-card-back">
+                            <img className="ipad" src={fourthPortrait} alt="reverse project 4" 
+                            />
+     
+    </div>
+  </div>
+</div>
                        
                         </>)
-                        : ( <> <img src={fifthPortrait} alt="projet 5" />
-                        <h2> Collage Official </h2> </>)
+                        : ( <>  <div className="flip-card">
+                        <div className="flip-card-inner">
+                          <div className="flip-card-front">
+                                                  <img className="ipad" src={fifthPortrait} alt="Project 5" />
+                                                  </div>
+                                                  <div className="flip-card-back">
+                                                  <img className="ipad" src={fifthPortrait} alt="reverse project 5" 
+                                                  />
+                           
+                          </div>
+                        </div>
+                      </div> </>)
+                       
             }
+           
         </StyledCard>
 
     )

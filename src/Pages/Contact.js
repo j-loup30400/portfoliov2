@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import emailjs from 'emailjs-com';
+
 
 import Git from "../Images/git.png"
 import Link from "../Images/link.png"
@@ -9,6 +10,62 @@ import Modal from "../components/Modal/Modal"
 
 
 
+
+const Move1 =keyframes`
+from { top:25% } 
+to {top: 40% }  `
+
+const Move2 = keyframes`
+from {top : 55%}
+to {top :  50%} `
+
+const Move3 = keyframes`
+from {left : 12vh}
+to {left :  2vh}
+`
+
+
+export const AnimeSmall = styled.div`
+    position: absolute;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    background-color: white;
+    background: linear-gradient(
+        to left top, 
+        #00E8CE, #F4C2C2);
+    top: 25%;
+    left: 7%;
+    animation: ${Move1} alternate infinite;
+    animation-duration: 3s;
+
+`
+export const AnimeMedium = styled.div`
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    background: linear-gradient(
+        to left top, 
+        #00E8CE,#F4C2C2);
+    top: 55%;
+    right: 3%;
+    animation: ${Move2} alternate infinite;
+    animation-duration: 3s;
+    `
+    export const AnimeLarge = styled.div`
+    position: absolute;
+    width: 45vw;
+    height: 45vw;
+    border-radius: 50%;
+    background: linear-gradient(
+        to right bottom, 
+        #F4C2C2,#00E8CE);
+    bottom: 12vh;
+    left: 4vw;
+    animation: ${Move3} alternate infinite;
+    animation-duration: 3s;
+  `
 
 const StyledContact = styled.form`
 display: flex;
@@ -22,6 +79,8 @@ background: linear-gradient(
 ,#FFFFFF 0%,rgba(255,255,255,0) 100%),linear-gradient(
 360deg
 ,#FFFFFF -2.86%,rgba(255,255,255,0) 58.69%),#FED677;
+
+
 
 
 h1{
@@ -39,6 +98,7 @@ input{
     padding:1rem;
     font-family: "poor-story";
     font-size: 18px;
+    z-index:0;
 }
 button{
   
@@ -53,7 +113,7 @@ button{
      padding: 8px;
      font-family: "poor-story";
      font-size: 18px;
-  
+     z-index: 0;
 }
 
 
@@ -64,6 +124,8 @@ textarea {
        text-align: center;
        font-family: "poor-story";
        font-size : 18px;
+       z-index: 0;
+     
        
 }
 /* @media all and (orientation: landscape) {
@@ -76,8 +138,6 @@ flex-direction:row;
 background: linear-gradient(180deg, #FFFFFF 0%, 
 rgba(255, 255, 255, 0) 100%), #00E8CE;
  justify-content: space-evenly;
-
-
 `
 
 
@@ -103,6 +163,9 @@ const Contact = () => {
     }
 return(
     <div> 
+      <AnimeSmall />
+      <AnimeMedium />
+      <AnimeLarge />
        <StyledContact onSubmit={sendEmail}> 
        <h1>Say Hello</h1>
     <label htmlFor="name"></label>
@@ -114,8 +177,7 @@ return(
    <button type="submit" value="Send" onClick={openModal}>Submit</button>
   <Modal showModal={showModal} setShowModal={setShowModal} /> 
     </StyledContact>
-  
-   
+    
     <StyledFooterContact>
            <p>
              <a href="https://www.linkedin.com/in/jeanloup-cayuela-467165204/" target="_blank" rel="noreferrer">
