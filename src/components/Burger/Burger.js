@@ -43,7 +43,19 @@ const StyledBurger = styled.button`
     :nth-child(3) {
       transform: ${({ modalOpen }) => modalOpen ? 'rotate(-45deg)' : 'rotate(0)'};
     }
+  
   }
+  @media all and (orientation: landscape) {
+    
+        top: 1rem;
+        right: 2rem;
+        
+       div{
+         display: none;
+         pointer-events:none;
+       }
+} 
+
 `;
 
 const Burger = ({ modalOpen, setModalOpen }) => {

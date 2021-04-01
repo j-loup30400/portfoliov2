@@ -56,5 +56,13 @@ body{
  .ipad {
    height: 35vh;
    position: absolute;
-   top: 25%
+   top: 25%;
+  
  }
+ @media all and (orientation: landscape) {
+   .ipad{
+     top:20%;
+   }
+ }
+
+

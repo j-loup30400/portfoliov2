@@ -34,7 +34,15 @@ font-size: 1.5rem;
     &:hover {
       color: #00E8CE;
     }
+    
   }
+  @media all and (orientation: landscape) {
+
+ display: none; 
+ pointer-events:none;
+ 
+} 
+  
 `;
 
 const Menu = ({ modalOpen, setModalOpen }) => {
