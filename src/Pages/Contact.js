@@ -131,6 +131,8 @@ const StyledContact = styled.form`
     font-family: "poor-story";
     font-size: 18px;
     z-index: 0;
+    width: 50vw;
+  
 
     @media all and (orientation: landscape) {
       font-size: 9px;
