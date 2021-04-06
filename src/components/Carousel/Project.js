@@ -11,6 +11,7 @@ const StyledCard = styled.div`
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  outline: none;
   align-items: center;
   justify-content: center;
   background: radial-gradient(

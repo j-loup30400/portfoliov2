@@ -40,7 +40,7 @@ const StyledAboutContainer = styled.div`
     h1 {
       text-align: center;
       text-shadow: 2.5px 2.5px #f4c2c2;
-      font-family: unpack;
+      font-family: "unpack-regular";
       font-size: 26px;
       color: #0a2268;
     }
