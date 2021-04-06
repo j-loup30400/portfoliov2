@@ -111,14 +111,14 @@ const StyledContact = styled.form`
     text-align: center;
     text-shadow: 5px 5px #f4c2c2;
     font-family: "unpack-regular";
-    font-size: 52px;
+    font-size: 6.89vh;
     color: #0a2268;
     margin: 0;
 
     @media all and (orientation: landscape) {
       text-align: center;
       text-shadow: 2.5px 2.5px #f4c2c2;
-      font-size: 26px;
+      font-size: 4vw;
       color: #0a2268;
       margin: 0;
     }
@@ -129,13 +129,13 @@ const StyledContact = styled.form`
     border: 2px solid #f4c2c2;
     padding: 1rem;
     font-family: "poor-story";
-    font-size: 18px;
+    font-size: 5vw;
     z-index: 0;
     width: 50vw;
   
 
     @media all and (orientation: landscape) {
-      font-size: 9px;
+      font-size: 2vw;
       padding: 8px;
       width: 22vw;
     }
@@ -151,28 +151,28 @@ const StyledContact = styled.form`
     width: 40vw;
     padding: 8px;
     font-family: "poor-story";
-    font-size: 18px;
+    font-size: 5vw;
     z-index: 0;
     @media all and (orientation: landscape) {
       margin: 0;
       width: 15vw;
-      font-size: 9px;
+      font-size: 2vw;
     }
   }
 
   textarea {
-    width: 50vw;
+    width:60vw;
     height: 15vh;
     border: 2px solid #f4c2c2;
     text-align: center;
     font-family: "poor-story";
-    font-size: 18px;
+    font-size: 5vw;
     z-index: 0;
 
     @media all and (orientation: landscape) {
       width: 25vw;
       height: 15vw;
-      font-size: 9px;
+      font-size: 2vw;
     }
   }
 `;
@@ -187,8 +187,8 @@ const StyledFooterContact = styled.footer`
     height: 23vh;
    justify-content: space-around; 
     img {
-      height: 50px;
-      width: 50px;
+      height: 6.63vw;
+      width: 6.63vw;
     }
   }
 `;
@@ -253,8 +253,8 @@ const Contact = () => {
             <img
               src={Link}
               alt="linkedin logo"
-              width="70px"
-              height="70px"
+              width="70vw"
+              height="70vw"
             ></img>
           </a>
         </p>
@@ -265,7 +265,7 @@ const Contact = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <img src={CV} alt="cv" width="70px" height="70px"></img>
+            <img src={CV} alt="cv" width="70vw" height="70vw"></img>
           </a>
         </p>
         <p>
@@ -274,7 +274,7 @@ const Contact = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <img src={Git} alt="git logo" width="70px" height="70px"></img>
+            <img src={Git} alt="git logo" width="70vw" height="70vw"></img>
           </a>
         </p>
       </StyledFooterContact>

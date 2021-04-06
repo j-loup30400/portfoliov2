@@ -36,8 +36,8 @@ button{
 }
 
 p{
-        font-size: 46px;
-        line-height:56px;
+        font-size: 3.44vh;
+        line-height:5vh;
         text-align: center;
         font-family: "unpack-regular";
         color: #0A2268;
@@ -45,8 +45,8 @@ p{
         margin:0;
         padding: 8px;
         @media all and (orientation: landscape) {
-    font-size:23px;
-    line-height: 22px;
+    font-size:3vw;
+    line-height: 2.5vw;
   }
   }
 

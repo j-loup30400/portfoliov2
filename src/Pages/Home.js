@@ -40,12 +40,12 @@ const StyledAboutContainer = styled.div`
     h1 {
       text-align: center;
       text-shadow: 2.5px 2.5px #f4c2c2;
-      font-size: 3.44vh;
+      font-size: 4vw;
       color: #0a2268;
     }
     p {
-      font-size: 2.12vh;
-      line-height: 4.24vh;
+      font-size: 2vw;
+      line-height: 4.24vw;
       text-align: center;
       font-weight: bold;
       padding: 8px;
@@ -89,7 +89,7 @@ const StyledCarousel = styled.div`
       padding: 8px;
       text-align: center;
       text-shadow: 2.5px 2.5px #f4c2c2;
-      font-size: 3.44vh;
+      font-size: 4vw;
       color: #0a2268;
       margin: 0;
     }
@@ -107,8 +107,8 @@ const StyledFooter = styled.div`
     height: 23vh;
 
     img {
-      height: 6.63vh;
-      width: 6.63vh;
+      height: 6.63vw;
+      width: 6.63vw;
     }
   }
 `;

@@ -17,8 +17,8 @@ const StyledCircleButtonsContainer = styled.div`
 const StyledCircleButton = styled.button`
   border: 0;
   border-radius: 50%;
-  width: 22px;
-  height: 22px;
+  width: 6vw;
+  height: 6vw;
   background-color: ${({ isActive }) =>
     isActive === 0 ? `#FED677` : `#F4C2C2`};
   transition: all 500ms;
@@ -29,16 +29,16 @@ const StyledCircleButton = styled.button`
   }
   @media all and (orientation: landscape) {
     border: 0px;
-    width: 14px;
-    height: 14px;
+    width: 3vw;
+    height: 3vw;
   }
 `;
 
 const StyledCircleButtonTwo = styled.button`
   border: 0;
   border-radius: 50%;
-  width: 22px;
-  height: 22px;
+  width: 6vw;
+  height: 6vw;
   background-color: ${({ isActive }) =>
     isActive === 1 ? `#FED677` : `#F4C2C2`};
   transition: all 500ms;
@@ -49,16 +49,16 @@ const StyledCircleButtonTwo = styled.button`
   }
   @media all and (orientation: landscape) {
    border: 0px;
-    width: 14px;
-    height: 14px;
+    width: 3vw;
+    height: 3vw;
   }
 `;
 
 const StyledCircleButtonThree = styled.button`
   border: 0;
   border-radius: 50%;
-  width: 22px;
-  height: 22px;
+  width: 6vw;
+  height: 6vw;
   background-color: ${({ isActive }) =>
     isActive === 2 ? `#FED677` : `#F4C2C2`};
   transition: all 300ms;
@@ -69,15 +69,15 @@ const StyledCircleButtonThree = styled.button`
   }
   @media all and (orientation: landscape) {
     border: 0px;
-    width: 14px;
-    height: 14px;
+    width: 3vw;
+    height: 3vw;
   }
 `;
 const StyledCircleButtonFour = styled.button`
   border: 0;
   border-radius: 50%;
-  width: 22px;
-  height: 22px;
+  width: 6vw;
+  height: 6vw;
   background-color: ${({ isActive }) =>
     isActive === 3 ? `#FED677` : `#F4C2C2`};
   transition: all 300ms;
@@ -88,8 +88,8 @@ const StyledCircleButtonFour = styled.button`
   }
   @media all and (orientation: landscape) {
     border: 0px;
-    width: 14px;
-    height: 14px;
+    width: 3vw;
+    height: 3vw;
   }
 `;
 

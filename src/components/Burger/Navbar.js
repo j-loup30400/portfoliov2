@@ -11,8 +11,8 @@ const StyledBurgerDesktop = styled.div`
   top: 0;
   display: flex;
   a {
-    font-size: 2.39vh;
-    line-height: 1.59vh;
+    font-size: 3vw;
+    line-height: 1.59vw;
     text-decoration: none;
     color: #0a2268;
   }
@@ -46,8 +46,8 @@ const StyledTitle = styled.div`
   }
   @media all and (orientation: landscape) {
     h2 {
-      font-size: 2.38vh;
-      line-height: 1.59vh;
+      font-size: 3vw;
+      line-height: 1.59vw;
     }
 
     button {
