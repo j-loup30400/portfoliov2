@@ -24,13 +24,13 @@ const StyledAboutContainer = styled.div`
     text-align: center;
     text-shadow: 5px 5px #f4c2c2;
     font-family: "unpack-regular";
-    font-size: 52px;
+    font-size: 6.89vh;
     color: #0a2268;
     margin-bottom: 0;
   }
 
   p {
-    font-size: 26px;
+    font-size: 3.44vh;
     line-height: 45px;
     text-align: center;
     font-weight: bold;
@@ -40,12 +40,12 @@ const StyledAboutContainer = styled.div`
     h1 {
       text-align: center;
       text-shadow: 2.5px 2.5px #f4c2c2;
-      font-size: 26px;
+      font-size: 3.44vh;
       color: #0a2268;
     }
     p {
-      font-size: 16px;
-      line-height: 32px;
+      font-size: 2.12vh;
+      line-height: 4.24vh;
       text-align: center;
       font-weight: bold;
       padding: 8px;
@@ -73,7 +73,7 @@ const StyledCarousel = styled.div`
     text-align: center;
     text-shadow: 5px 5px #f4c2c2;
     font-family: "unpack-regular";
-    font-size: 52px;
+    font-size: 6.89vh;
     color: #0a2268;
   }
   @media all and (orientation: landscape) {
@@ -89,8 +89,7 @@ const StyledCarousel = styled.div`
       padding: 8px;
       text-align: center;
       text-shadow: 2.5px 2.5px #f4c2c2;
-      font-family: unpack;
-      font-size: 26px;
+      font-size: 3.44vh;
       color: #0a2268;
       margin: 0;
     }
@@ -108,8 +107,8 @@ const StyledFooter = styled.div`
     height: 23vh;
 
     img {
-      height: 50px;
-      width: 50px;
+      height: 6.63vh;
+      width: 6.63vh;
     }
   }
 `;
@@ -158,8 +157,8 @@ const Home = () => {
             <img
               src={Link}
               alt="linkedin logo"
-              width="70px"
-              height="70px"
+              width="70vw"
+              height="70vw"
             ></img>
           </a>
         </p>
@@ -170,7 +169,7 @@ const Home = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <img src={CV} alt="cv" width="70px" height="70px"></img>
+            <img src={CV} alt="cv" width="70vw" height="70vw"></img>
           </a>
         </p>
         <p>
@@ -179,7 +178,7 @@ const Home = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <img src={Git} alt="git logo" width="70px" height="70px"></img>
+            <img src={Git} alt="git logo" width="70vw" height="70vw"></img>
           </a>
         </p>
       </StyledFooter>
