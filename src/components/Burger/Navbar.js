@@ -65,12 +65,12 @@ const Navbar = () => {
       <h2>Cayuela Jean-Loup</h2>
       <StyledBurgerDesktop>
         <h2>
-          {" "}
-          <Link to="/">Home</Link>{" "}
+         
+          <Link to="/">Home</Link>
         </h2>
         <h2>
-          {" "}
-          <Link to="/Contact">Contact</Link>{" "}
+          
+          <Link to="/Contact">Contact</Link>
         </h2>
       </StyledBurgerDesktop>
     </StyledTitle>

@@ -15,6 +15,7 @@ const StyledBurger = styled.button`
   border: none;
   cursor: pointer;
   z-index: 3 ;
+  
 
   &:focus {
     outline: none;
@@ -60,7 +61,7 @@ const StyledBurger = styled.button`
 
 const Burger = ({ modalOpen, setModalOpen }) => {
     return (
-        <StyledBurger modalOpen={modalOpen} onClick={() => setModalOpen(!modalOpen)} >
+        <StyledBurger modalOpen={modalOpen} onClick={() => setModalOpen(!modalOpen)} aria-label='open menu' >
             <div />
             <div />
             <div />

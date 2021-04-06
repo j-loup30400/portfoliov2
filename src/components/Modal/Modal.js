@@ -16,6 +16,18 @@ const StyledModal = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media all and (orientation: landscape) {
+    width: 100vw;
+    height: 100vh;
+    padding: 8px;
+
+    img {
+      width: 20vw;
+      padding: 1rem;
+      
+    }
+  }
   
 
 
@@ -32,6 +44,10 @@ p{
         text-shadow: 5px 5px #F4C2C2;
         margin:0;
         padding: 8px;
+        @media all and (orientation: landscape) {
+    font-size:23px;
+    line-height: 22px;
+  }
   }
 
 `
