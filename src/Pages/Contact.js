@@ -148,7 +148,7 @@ const StyledContact = styled.form`
     border: 2px solid;
     box-shadow: 2px 2px #00e8ce;
     margin: 1rem auto;
-    width: 30vw;
+    width: 40vw;
     padding: 8px;
     font-family: "poor-story";
     font-size: 18px;
