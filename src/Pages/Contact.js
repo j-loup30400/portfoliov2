@@ -252,8 +252,8 @@ const Contact = () => {
             <img
               src={Link}
               alt="linkedin logo"
-              width="50px"
-              height="50px"
+              width="70px"
+              height="70px"
             ></img>
           </a>
         </p>
@@ -264,7 +264,7 @@ const Contact = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <img src={CV} alt="cv" width="50px" height="50px"></img>
+            <img src={CV} alt="cv" width="70px" height="70px"></img>
           </a>
         </p>
         <p>
@@ -273,7 +273,7 @@ const Contact = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <img src={Git} alt="git logo" width="50px" height="50px"></img>
+            <img src={Git} alt="git logo" width="70px" height="70px"></img>
           </a>
         </p>
       </StyledFooterContact>
