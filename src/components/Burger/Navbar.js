@@ -15,6 +15,7 @@ const StyledBurgerDesktop = styled.div`
     line-height: 1.59vw;
     text-decoration: none;
     color: #0a2268;
+    padding: 1vw;
   }
 
   @media all and (orientation: portrait) {

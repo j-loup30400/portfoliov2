@@ -86,9 +86,9 @@ export const AnimeLarge = styled.div`
   animation-duration: 3s;
 
   @media all and (orientation: landscape) {
-    width: 25vw;
-    height: 25vw;
-    bottom: -35vh;
+    width: 23vw;
+    height: 23vw;
+    bottom: -30vh;
   }
 `;
 
@@ -144,7 +144,7 @@ const StyledContact = styled.form`
     outline: none;
     color: #0a2268;
     background-color: #f4c2c2;
-    border-radius: 20px;
+    border-radius: 3.5vw;
     border: 2px solid;
     box-shadow: 2px 2px #00e8ce;
     margin: 1rem auto;
