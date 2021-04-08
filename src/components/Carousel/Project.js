@@ -28,15 +28,15 @@ const StyledCard = styled.div`
     #f4c2c2;
   padding: 8px;
 
-  img {
-     width: 120%;
+  /* img {
+     width:120%;
      height: auto;
     cursor: pointer;
     outline: none;
 
     @media all and (orientation: landscape) {
      width: 70%
-  }}
+  }} */
   `
 const Project = ({ imageNumber }) => {
   return (
@@ -46,7 +46,7 @@ const Project = ({ imageNumber }) => {
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <img src={firstPortrait} alt="Project" />
+                <img className="frontPhone" src={firstPortrait} alt="Project" />
               </div>
 
               <div className="flip-card-back">
@@ -66,7 +66,7 @@ const Project = ({ imageNumber }) => {
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <img src={secondPortrait} alt="Project 2" />
+                <img className="front" src={secondPortrait} alt="Project 2" />
               </div>
               <div className="flip-card-back">
               <a
@@ -89,7 +89,7 @@ const Project = ({ imageNumber }) => {
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <img src={thirdPortrait} alt="Project 3" />
+                <img className="front" src={thirdPortrait} alt="Project 3" />
               </div>
               <div className="flip-card-back">
               <a
@@ -112,7 +112,7 @@ const Project = ({ imageNumber }) => {
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <img src={fourthPortrait} alt="Project 4" />
+                <img className="front" src={fourthPortrait} alt="Project 4" />
               </div>
               <div className="flip-card-back">
               <a
