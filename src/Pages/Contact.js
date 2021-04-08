@@ -261,7 +261,7 @@ const Contact = () => {
 
         <p>
           <a
-            href="https://drive.google.com/file/d/1duyc8f6jozdpFe8YQoeVE8wIJKVECYfS/view?usp=sharing"
+            href="https://drive.google.com/file/d/10b8LNZb_yPAeeXggAkmBR-ARv6w36gBX/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >

@@ -6,6 +6,11 @@ import firstPortrait from "../../Images/pick-a-chew.png";
 import secondPortrait from "../../Images/code.png";
 import thirdPortrait from "../../Images/nurserie.png";
 import fourthPortrait from "../../Images/collage.png";
+import firstReverse from "../../Images/reversePick-a-chew.png";
+import secondReverse from "../../Images/reverseCode.png";
+import thirdReverse from "../../Images/reverseNurserie.png";
+import fourthReverse from "../../Images/reverseCollage.png";
+
 
 const StyledCard = styled.div`
   border-radius: 10px;
@@ -24,14 +29,13 @@ const StyledCard = styled.div`
   padding: 8px;
 
   img {
-    padding: 8px; 
      width: 120%;
      height: auto;
     cursor: pointer;
     outline: none;
 
     @media all and (orientation: landscape) {
-     width: 80%
+     width: 70%
   }}
   `
 const Project = ({ imageNumber }) => {
@@ -46,13 +50,13 @@ const Project = ({ imageNumber }) => {
               </div>
 
               <div className="flip-card-back">
-              {/* <a
-            href="https://www.linkedin.com/in/jeanloup-cayuela-467165204/"
+               <a
+            href="https://github.com/j-loup30400/Pick-A-Chew"
             target="_blank"
             rel="noreferrer"
-          > */}
-                <img src={firstPortrait} alt="Reverse Project" />
-                {/* </a> */}
+          > 
+                <img className="reversePhone" src={firstReverse} alt="Reverse Project" />
+                 </a> 
               </div>
             </div>
           </div>
@@ -65,11 +69,17 @@ const Project = ({ imageNumber }) => {
                 <img src={secondPortrait} alt="Project 2" />
               </div>
               <div className="flip-card-back">
+              <a
+            href="https://github.com/j-loup30400/Code-Caffe"
+            target="_blank"
+            rel="noreferrer"
+          > 
                 <img
-                  className="ipad"
-                  src={secondPortrait}
+                 className="reverse"
+                  src={secondReverse}
                   alt="reverse project 2"
                 />
+               </a> 
               </div>
             </div>
           </div>
@@ -82,11 +92,17 @@ const Project = ({ imageNumber }) => {
                 <img src={thirdPortrait} alt="Project 3" />
               </div>
               <div className="flip-card-back">
+              <a
+            href="https://github.com/j-loup30400/Twilio-Hackathon-"
+            target="_blank"
+            rel="noreferrer"
+          > 
                 <img
-                  className="ipad"
-                  src={thirdPortrait}
+                  className="reverse"
+                  src={thirdReverse}
                   alt="reverse project 3"
                 />
+                </a>
               </div>
             </div>
           </div>
@@ -99,11 +115,17 @@ const Project = ({ imageNumber }) => {
                 <img src={fourthPortrait} alt="Project 4" />
               </div>
               <div className="flip-card-back">
+              <a
+            href="https://github.com/j-loup30400/Collage-Project"
+            target="_blank"
+            rel="noreferrer"
+          > 
                 <img
-                  className="ipad"
-                  src={fourthPortrait}
+                  className="reverse"
+                  src={fourthReverse}
                   alt="reverse project 4"
                 />
+                </a>
               </div>
             </div>
           </div>
