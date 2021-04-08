@@ -78,11 +78,11 @@ const StyledCarousel = styled.div`
     color: #0a2268;
   }
   @media all and (orientation: landscape) {
-    height: 98vh;
+    height: 110vh;
 
     div {
-      width: 30vw;
-      height: 30vw;
+      width: 35vw;
+      height: 35vw;
       border-radius: 50%;
     }
 
