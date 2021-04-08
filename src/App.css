@@ -54,15 +54,16 @@ body {
 
 
 .frontPhone {
- width: 90vw;
+ width: 45vh;
  cursor: pointer;
-    outline: none;
+ outline: none;
 }
 
 
 .reversePhone {
-  width: 90vw;
-  transform: scale(1.4);
+  width: 56vh;
+  position: relative;
+  
 }
 
 .reverse {

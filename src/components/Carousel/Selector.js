@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const StyledCircleButtonsContainer = styled.div`
   display: flex;
-  gap: 22px;
+  gap: 7vw;
   margin: 10px;
   button:focus {
     outline-style: none;
