@@ -1,16 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-//  images
-import firstPortrait from "../../Images/pick-a-chew.png";
-import secondPortrait from "../../Images/code.png";
-import thirdPortrait from "../../Images/nurserie.png";
-import fourthPortrait from "../../Images/collage.png";
-import firstReverse from "../../Images/reversePick-a-chew.png";
-import secondReverse from "../../Images/reverseCode.png";
-import thirdReverse from "../../Images/reverseNurserie.png";
-import fourthReverse from "../../Images/reverseCollage.png";
-
 const StyledCard = styled.div`
   border-radius: 10px;
   outline: none;
@@ -32,14 +22,12 @@ const StyledCard = styled.div`
     align-items: center;
   }
 
-
   @media all and (orientation: landscape) {
     width: 40vw;
     height: 40vw;
     border-radius: 50%;
     left: 30%;
   }
-
 `;
 const Project = ({ imageNumber }) => {
   return (
@@ -92,13 +80,7 @@ const Project = ({ imageNumber }) => {
                     )
                   }
                   className="flip-card-back3"
-                >
-                  <a
-                    href="https://github.com/j-loup30400/Twilio-Hackathon-"
-                    target="_blank"
-                    rel="noreferrer"
-                  ></a>
-                </div>
+                ></div>
               </div>
             </div>
           </>
