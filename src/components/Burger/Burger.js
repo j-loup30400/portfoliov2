@@ -32,6 +32,7 @@ const StyledBurger = styled.button`
     position: relative;
     transform-origin: 1px;
 
+
     :first-child {
       transform: ${({ modalOpen }) => modalOpen ? 'rotate(45deg)' : 'rotate(0)'};
     }
@@ -45,6 +46,15 @@ const StyledBurger = styled.button`
       transform: ${({ modalOpen }) => modalOpen ? 'rotate(-45deg)' : 'rotate(0)'};
     }
   
+
+    @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+      width: 4rem;  
+      height: 0.4rem;
+      right: 4rem;
+      top: 1.7rem;
+      transform-origin: 15px;
+    }
+     
   }
   @media all and (orientation: landscape) {
     
@@ -56,6 +66,8 @@ const StyledBurger = styled.button`
          pointer-events:none;
        }
 } 
+
+
 
 `;
 

@@ -5,9 +5,6 @@ import styled from "styled-components";
 import Project from "../components/Carousel/Project";
 import Selector from "../components/Carousel/Selector";
 
-import Git from "../Images/git.png";
-import Link from "../Images/link.png";
-import CV from "../Images/cv.png";
 
 const StyledAboutContainer = styled.div`
   width: 100%;
@@ -49,7 +46,6 @@ const StyledAboutContainer = styled.div`
       text-align: center;
       font-weight: bold;
       padding: 8px;
-      
     }
   }
 `;
@@ -58,78 +54,40 @@ const StyledCarousel = styled.div`
   background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
     linear-gradient(360deg, #ffffff -2.86%, rgba(255, 255, 255, 0) 58.69%),
     #00e8ce;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 4px;
-  gap: 12px;
-
-  div {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  width: 100vw;
+  height: 70vh;
   h1 {
     text-align: center;
     text-shadow: 5px 5px #f4c2c2;
     font-family: "unpack-regular";
     font-size: 6.89vh;
     color: #0a2268;
+    position: relative;
   }
+
   @media all and (orientation: landscape) {
-    height: 115vh;
+    height: 120vh;
+  }
 
-    div {
-      width: 35vw;
-      height: 35vw;
-      border-radius: 50%;
-    }
+  @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    height: 80vh;
+  }
 
-    h1 {
-      padding: 8px;
-      text-align: center;
-      text-shadow: 2.5px 2.5px #f4c2c2;
-      font-size: 4vw;
-      color: #0a2268;
-      margin: 0;
-    }
-    @media only screen and (device-height: 768px) {
-    height: 75vh
-  }
-  @media only screen and (device-height: 1024px) {
-    height: 75vh
-  }
-  @media only screen and (device-height: 540px) {
-    height: 75vh
-  }
-  }
- 
 `;
 
 const StyledFooter = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
     #00e8ce;
+  width: 100vw;
+  height: 10vh;
 
-  @media all and (orientation: landscape) {
-    height: 23vh;
-
-    img {
-      height: 6.63vw;
-      width: 6.63vw;
-    }
-    @media only screen and (device-height: 768px) {
-    height: 15vh
-  }
-  @media only screen and (device-height: 1024px) {
-    height: 15vh
-  }
-  @media only screen and (device-height: 540px) {
-    height: 15vh
-  }
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    height: 10vh;
+    position: relative;
   }
 `;
 
@@ -147,11 +105,9 @@ const Home = () => {
       <StyledAboutContainer>
         <h1>About Me</h1>
         <p>
-          Front-end and UX/UI design are exciting career because it's always
-          evolving and constantly changing. This means you'll always have the
-          opportunity to interact with new tools and learn new skills, keeping
-          you engaged in your career. It's a field that provide many
-          opportunities for hands-on-learning.
+          I'm an enthusiastic Junior Front-end Developer with a fine eye for
+          detail, based in London, passionate about coding and UX & UI design.
+          Welcome to my world
         </p>
       </StyledAboutContainer>
       <StyledCarousel>
@@ -168,39 +124,11 @@ const Home = () => {
         />
       </StyledCarousel>
       <StyledFooter>
-        <p>
-          <a
-            href="https://www.linkedin.com/in/jeanloup-cayuela-467165204/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src={Link}
-              alt="linkedin logo"
-              width="70vw"
-              height="70vw"
-            ></img>
-          </a>
-        </p>
-
-        <p>
-          <a
-            href="https://drive.google.com/file/d/10b8LNZb_yPAeeXggAkmBR-ARv6w36gBX/view?usp=sharing"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={CV} alt="cv" width="70vw" height="70vw"></img>
-          </a>
-        </p>
-        <p>
-          <a
-            href="https://github.com/j-loup30400"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={Git} alt="git logo" width="70vw" height="70vw"></img>
-          </a>
-        </p>
+        <div>
+       <div onClick={() => window.open("https://www.linkedin.com/in/jeanloup-cayuela-467165204/", "_blank")} className="footerLink"></div>   
+            <div onClick={() => window.open("https://drive.google.com/file/d/10b8LNZb_yPAeeXggAkmBR-ARv6w36gBX/view?usp=sharing", "_blank")} className="footerCv"></div>
+            <div onClick={() => window.open("https://github.com/j-loup30400", "_blank")} className="footerGit"></div>
+        </div>
       </StyledFooter>
     </>
   );

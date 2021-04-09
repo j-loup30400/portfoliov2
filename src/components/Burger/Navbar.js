@@ -55,6 +55,7 @@ const StyledTitle = styled.div`
       display: none;
     }
   }
+
 `;
 
 const Navbar = () => {

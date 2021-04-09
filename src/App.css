@@ -17,8 +17,12 @@ body {
 
 .flip-card {
   background-color: transparent;
-  height: 60vh;
+ position: absolute;
+ top: 6%;
+ width: 85%;
+ height:85%;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
 }
 
 /* This container is needed to position the front and back side */
@@ -37,8 +41,15 @@ body {
 }
 
 /* Position the front and back side */
-.flip-card-front,
-.flip-card-back {
+.flip-card-front1,
+.flip-card-back1,
+.flip-card-front2,
+.flip-card-back2,
+.flip-card-front3,
+.flip-card-back3,
+.flip-card-front4,
+.flip-card-back4
+ {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -46,115 +57,93 @@ body {
   backface-visibility: hidden;
 }
 
+.flip-card-front1{
+  background-image: url("./Images/pick-a-chew.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.flip-card-front2{
+  background-image: url("./Images/code.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.flip-card-front3{
+  background-image: url("./Images/nurserie.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.flip-card-front4{
+  background-image: url("./Images/collage.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+
+
 /* Style the back side */
-.flip-card-back {
+.flip-card-back1 {
   transform: rotateY(180deg);
+  background-image: url("./Images/reversePick-a-chew.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.flip-card-back2 {
+  transform: rotateY(180deg);
+  background-image: url("./Images/reverseCode.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.flip-card-back3 {
+  transform: rotateY(180deg);
+  background-image: url("./Images/reverseNurserie.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.flip-card-back4 {
+  transform: rotateY(180deg);
+  background-image: url("./Images/reverseCollage.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 
-
-.frontPhone {
-  width: 85vw;
- cursor: pointer;
- outline: none;
+.footerLink{
+  background-image:url('./Images/link.png');
+   width:30%;
+    height:100%; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
-
-.reversePhone {
-  width: 81vw;
+.footerCv{
+  background-image:url('./Images/cv.png');
+   width:30%;
+    height:100%; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
-.reverse {
-  width: 90vw; 
-  
-}
-
-.front {
-  width: 90vw;
-  cursor: pointer;
-    outline: none;
-}
-
-
-@media all and (orientation: landscape){
-.reversePhone {
- width: 23vw;
-
-}
-
-.frontPhone {
-  width: 25vw;
- }
- 
-
-.reverse {
- width: 30vw;
-}
-
-
-.front {
-  width: 30vw;
-}
-
-}
-
-@media only screen and (device-width: 768px) {
-  .reversePhone {
-    width: 58vw;
-   }
-
-   .reverse {
-    width: 75vw;
-   }
-}
-
-@media only screen and (device-height: 1024px) {
-  .reversePhone {
-    width: 23vw;
-   }
-   
-   .reverse {
-    width: 28vw;
-   }
-
-}
-
-@media only screen and (device-height: 1366px) {
-  .reversePhone {
-    width: 59vw;
-   }
-
-   .reverse {
-    width: 65vw;
-   }
-
-}
-
-@media only screen and (device-height: 540px) {
-  .reversePhone {
-    width: 23vw;
-   }
-
-   .reverse {
-    width: 28vw;
-   }
-}
-
-@media only screen and (device-height: 720px) {
-  .frontPhone {
-    width: 60vw;
-   }
- 
- 
-  .reversePhone {
-    width: 56vw;
-   }
-
-   .reverse {
-    width: 65vw;
-   }
-
-   .front {
-    width: 65vw;
-  }
+.footerGit{
+  background-image:url('./Images/git.png');
+   width:30%;
+    height:100%; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }

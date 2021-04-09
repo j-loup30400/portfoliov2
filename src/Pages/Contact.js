@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import emailjs from "emailjs-com";
 
-import Git from "../Images/git.png";
-import Link from "../Images/link.png";
-import CV from "../Images/cv.png";
+
 import Modal from "../components/Modal/Modal";
 
 const Move1 = keyframes`
@@ -105,7 +103,6 @@ const StyledContact = styled.form`
   @media all and (orientation: landscape) {
     height: 116vh;
     justify-content: space-around;
-   
   }
 
   h1 {
@@ -133,7 +130,6 @@ const StyledContact = styled.form`
     font-size: 5vw;
     z-index: 0;
     width: 50vw;
-  
 
     @media all and (orientation: landscape) {
       font-size: 2vw;
@@ -162,7 +158,7 @@ const StyledContact = styled.form`
   }
 
   textarea {
-    width:60vw;
+    width: 60vw;
     height: 15vh;
     border: 2px solid #f4c2c2;
     text-align: center;
@@ -177,31 +173,22 @@ const StyledContact = styled.form`
     }
   }
 `;
-const StyledFooterContact = styled.footer`
-  display: flex;
-  flex-direction: row;
+const StyledFooterContact = styled.div`
   background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
     #00e8ce;
-  justify-content: space-evenly;
+  width: 100vw;
+  height: 10vh;
 
-  @media all and (orientation: landscape) {
-    height: 23vh;
-   justify-content: space-around; 
-    img {
-      height: 6.63vw;
-      width: 6.63vw;
-    }
-    @media only screen and (device-height: 768px) {
-    height: 15vh
-  }
-  @media only screen and (device-height: 1024px) {
-    height: 15vh
-  }
-  @media only screen and (device-height: 540px) {
-    height: 15vh
-  }
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    height: 10vh;
+    position: relative;
   }
 `;
+
 
 const Contact = () => {
   const [showModal, setShowModal] = useState(false);
@@ -254,39 +241,11 @@ const Contact = () => {
       </StyledContact>
 
       <StyledFooterContact>
-        <p>
-          <a
-            href="https://www.linkedin.com/in/jeanloup-cayuela-467165204/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src={Link}
-              alt="linkedin logo"
-              width="70vw"
-              height="70vw"
-            ></img>
-          </a>
-        </p>
-
-        <p>
-          <a
-            href="https://drive.google.com/file/d/10b8LNZb_yPAeeXggAkmBR-ARv6w36gBX/view?usp=sharing"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={CV} alt="cv" width="70vw" height="70vw"></img>
-          </a>
-        </p>
-        <p>
-          <a
-            href="https://github.com/j-loup30400"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={Git} alt="git logo" width="70vw" height="70vw"></img>
-          </a>
-        </p>
+      <div>
+      <div onClick={() => window.open("https://www.linkedin.com/in/jeanloup-cayuela-467165204/", "_blank")} className="footerLink"></div>   
+            <div onClick={() => window.open("https://drive.google.com/file/d/10b8LNZb_yPAeeXggAkmBR-ARv6w36gBX/view?usp=sharing", "_blank")} className="footerCv"></div>
+            <div onClick={() => window.open("https://github.com/j-loup30400", "_blank")} className="footerGit"></div>
+</div>
       </StyledFooterContact>
     </div>
   );

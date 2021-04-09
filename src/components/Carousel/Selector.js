@@ -2,14 +2,15 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledCircleButtonsContainer = styled.div`
-  display: flex;
-  gap: 7vw;
-  margin: 10px;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+  position: relative;
+  left: 25%;
+  top:10%;
+  width: 50%;
   button:focus {
     outline-style: none;
-  }
-  @media all and (orientation: landscape) {
-   margin:5px;
   }
 
 `;

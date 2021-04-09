@@ -11,14 +11,9 @@ import secondReverse from "../../Images/reverseCode.png";
 import thirdReverse from "../../Images/reverseNurserie.png";
 import fourthReverse from "../../Images/reverseCollage.png";
 
-
 const StyledCard = styled.div`
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
   outline: none;
-  align-items: center;
-  justify-content: center;
   background: radial-gradient(
       50% 114.08% at 50% 50%,
       #ffffff 0%,
@@ -26,103 +21,106 @@ const StyledCard = styled.div`
       rgba(255, 255, 255, 0) 100%
     ),
     #f4c2c2;
-  padding: 8px;
+  width: 90%;
+  height: 60%;
+  left: 5%;
+  position: relative;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 
-  `
+  @media all and (orientation: landscape) {
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    left: 30%;
+  }
+
+`;
 const Project = ({ imageNumber }) => {
   return (
     <StyledCard>
-      {imageNumber === 0 ? (
-        <>
-          <div className="flip-card">
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
-                <img className="frontPhone" src={firstPortrait} alt="Project" />
-              </div>
-
-              <div className="flip-card-back">
-               <a
-            href="https://github.com/j-loup30400/Pick-A-Chew"
-            target="_blank"
-            rel="noreferrer"
-          > 
-                <img className="reversePhone" src={firstReverse} alt="Reverse Project" />
-                 </a> 
-              </div>
-            </div>
-          </div>
-        </>
-      ) : imageNumber === 1 ? (
-        <>
-          <div className="flip-card">
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
-                <img className="front" src={secondPortrait} alt="Project 2" />
-              </div>
-              <div className="flip-card-back">
-              <a
-            href="https://github.com/j-loup30400/Code-Caffe"
-            target="_blank"
-            rel="noreferrer"
-          > 
-                <img
-                 className="reverse"
-                  src={secondReverse}
-                  alt="reverse project 2"
-                />
-               </a> 
-              </div>
-            </div>
-          </div>
-        </>
-      ) : imageNumber === 2 ? (
+      <div>
+        {imageNumber === 0 ? (
           <>
-          <div className="flip-card">
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
-                <img className="front" src={thirdPortrait} alt="Project 3" />
-              </div>
-              <div className="flip-card-back">
-              <a
-            href="https://github.com/j-loup30400/Twilio-Hackathon-"
-            target="_blank"
-            rel="noreferrer"
-          > 
-                <img
-                  className="reverse"
-                  src={thirdReverse}
-                  alt="reverse project 3"
-                />
-                </a>
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front1"></div>
+                <div
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/j-loup30400/Pick-A-Chew",
+                      "_blank"
+                    )
+                  }
+                  className="flip-card-back1"
+                ></div>
               </div>
             </div>
-          </div>
-        </>
-      ) : imageNumber === 3 ? (
-        <>
-          <div className="flip-card">
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
-                <img className="front"src={fourthPortrait} alt="Project 4" />
-              </div>
-              <div className="flip-card-back">
-              <a
-            href="https://github.com/j-loup30400/Collage-Project"
-            target="_blank"
-            rel="noreferrer"
-          > 
-                <img
-                  className="reverse"
-                  src={fourthReverse}
-                  alt="reverse project 4"
-                />
-                </a>
+          </>
+        ) : imageNumber === 1 ? (
+          <>
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front2"></div>
+                <div
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/j-loup30400/Code-Caffe",
+                      "_blank"
+                    )
+                  }
+                  className="flip-card-back2"
+                ></div>
               </div>
             </div>
-          </div>
-        </>
-      ) : null }
+          </>
+        ) : imageNumber === 2 ? (
+          <>
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front3"></div>
+                <div
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/j-loup30400/Twilio-Hackathon-",
+                      "_blank"
+                    )
+                  }
+                  className="flip-card-back3"
+                >
+                  <a
+                    href="https://github.com/j-loup30400/Twilio-Hackathon-"
+                    target="_blank"
+                    rel="noreferrer"
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </>
+        ) : imageNumber === 3 ? (
+          <>
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front4"></div>
+                <div
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/j-loup30400/Collage-Project",
+                      "_blank"
+                    )
+                  }
+                  className="flip-card-back4"
+                ></div>
+              </div>
+            </div>
+          </>
+        ) : null}
+      </div>
     </StyledCard>
   );
 };

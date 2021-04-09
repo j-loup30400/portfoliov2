@@ -40,9 +40,12 @@ font-size: 1.5rem;
 
  display: none; 
  pointer-events:none;
- 
 } 
-  
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  a{
+    font-size: 8rem;
+  }
+}
 `;
 
 const Menu = ({ modalOpen, setModalOpen }) => {
