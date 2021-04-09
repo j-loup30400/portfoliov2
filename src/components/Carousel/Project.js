@@ -28,15 +28,7 @@ const StyledCard = styled.div`
     #f4c2c2;
   padding: 8px;
 
-  /* img {
-     width:120%;
-     height: auto;
-    cursor: pointer;
-    outline: none;
 
-    @media all and (orientation: landscape) {
-     width: 70%
-  }} */
   `
 const Project = ({ imageNumber }) => {
   return (

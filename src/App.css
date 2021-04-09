@@ -54,16 +54,14 @@ body {
 
 
 .frontPhone {
- width: 45vh;
+  width: 85vw;
  cursor: pointer;
  outline: none;
 }
 
 
 .reversePhone {
-  width: 56vh;
-  position: relative;
-  
+  width: 81vw;
 }
 
 .reverse {
@@ -80,22 +78,83 @@ body {
 
 @media all and (orientation: landscape){
 .reversePhone {
- width: 24vw;
- transform: scale(1.4);
+ width: 23vw;
+
 }
 
 .frontPhone {
-  width: 24vw;
+  width: 25vw;
  }
  
 
 .reverse {
- width: 27vw;
+ width: 30vw;
 }
 
 
 .front {
-  width: 27vw;
+  width: 30vw;
 }
 
+}
+
+@media only screen and (device-width: 768px) {
+  .reversePhone {
+    width: 58vw;
+   }
+
+   .reverse {
+    width: 75vw;
+   }
+}
+
+@media only screen and (device-height: 1024px) {
+  .reversePhone {
+    width: 23vw;
+   }
+   
+   .reverse {
+    width: 28vw;
+   }
+
+}
+
+@media only screen and (device-height: 1366px) {
+  .reversePhone {
+    width: 59vw;
+   }
+
+   .reverse {
+    width: 65vw;
+   }
+
+}
+
+@media only screen and (device-height: 540px) {
+  .reversePhone {
+    width: 23vw;
+   }
+
+   .reverse {
+    width: 28vw;
+   }
+}
+
+@media only screen and (device-height: 720px) {
+  .frontPhone {
+    width: 60vw;
+   }
+ 
+ 
+  .reversePhone {
+    width: 56vw;
+   }
+
+   .reverse {
+    width: 65vw;
+   }
+
+   .front {
+    width: 65vw;
+  }
 }

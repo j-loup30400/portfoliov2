@@ -105,6 +105,7 @@ const StyledContact = styled.form`
   @media all and (orientation: landscape) {
     height: 116vh;
     justify-content: space-around;
+   
   }
 
   h1 {
@@ -190,6 +191,15 @@ const StyledFooterContact = styled.footer`
       height: 6.63vw;
       width: 6.63vw;
     }
+    @media only screen and (device-height: 768px) {
+    height: 15vh
+  }
+  @media only screen and (device-height: 1024px) {
+    height: 15vh
+  }
+  @media only screen and (device-height: 540px) {
+    height: 15vh
+  }
   }
 `;
 

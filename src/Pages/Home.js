@@ -78,7 +78,7 @@ const StyledCarousel = styled.div`
     color: #0a2268;
   }
   @media all and (orientation: landscape) {
-    height: 110vh;
+    height: 115vh;
 
     div {
       width: 35vw;
@@ -94,7 +94,17 @@ const StyledCarousel = styled.div`
       color: #0a2268;
       margin: 0;
     }
+    @media only screen and (device-height: 768px) {
+    height: 75vh
   }
+  @media only screen and (device-height: 1024px) {
+    height: 75vh
+  }
+  @media only screen and (device-height: 540px) {
+    height: 75vh
+  }
+  }
+ 
 `;
 
 const StyledFooter = styled.div`
@@ -111,6 +121,15 @@ const StyledFooter = styled.div`
       height: 6.63vw;
       width: 6.63vw;
     }
+    @media only screen and (device-height: 768px) {
+    height: 15vh
+  }
+  @media only screen and (device-height: 1024px) {
+    height: 15vh
+  }
+  @media only screen and (device-height: 540px) {
+    height: 15vh
+  }
   }
 `;
 
