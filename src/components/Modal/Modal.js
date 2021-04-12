@@ -32,26 +32,7 @@ const StyledModal = styled.div`
   }
 
   button {
-    outline: none;
-    color: #0a2268;
-    background-color: #f4c2c2;
-    border-radius: 3.5vw;
-    border: 2px solid;
-    box-shadow: 2px 2px #00e8ce;
-    margin: 1rem auto;
-    width: 40vw;
-    padding: 8px;
-    font-family: "poor-story";
-    font-size: 5vw;
-    z-index: 0;
-    position: absolute;
-    bottom: 10vh;
-    left: 25vw;
-    @media all and (orientation: landscape) {
-      font-size: 2vw;
-      left: 31vw;
-      bottom: 5vh;
-    }
+    align-items: center;
   }
 
   p {
