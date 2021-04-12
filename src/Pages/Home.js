@@ -5,7 +5,6 @@ import styled from "styled-components";
 import Project from "../components/Carousel/Project";
 import Selector from "../components/Carousel/Selector";
 
-
 const StyledAboutContainer = styled.div`
   width: 100%;
   display: flex;
@@ -66,13 +65,12 @@ const StyledCarousel = styled.div`
   }
 
   @media all and (orientation: landscape) {
-    height: 120vh;
+    height: 130vh;
   }
 
   @media only screen and (min-width: 1024px) and (max-width: 1366px) {
     height: 80vh;
   }
-
 `;
 
 const StyledFooter = styled.div`
@@ -125,9 +123,30 @@ const Home = () => {
       </StyledCarousel>
       <StyledFooter>
         <div>
-       <div onClick={() => window.open("https://www.linkedin.com/in/jeanloup-cayuela-467165204/", "_blank")} className="footerLink"></div>   
-            <div onClick={() => window.open("https://drive.google.com/file/d/10b8LNZb_yPAeeXggAkmBR-ARv6w36gBX/view?usp=sharing", "_blank")} className="footerCv"></div>
-            <div onClick={() => window.open("https://github.com/j-loup30400", "_blank")} className="footerGit"></div>
+          <div
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/jeanloup-cayuela-467165204/",
+                "_blank"
+              )
+            }
+            className="footerLink"
+          ></div>
+          <div
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/10b8LNZb_yPAeeXggAkmBR-ARv6w36gBX/view?usp=sharing",
+                "_blank"
+              )
+            }
+            className="footerCv"
+          ></div>
+          <div
+            onClick={() =>
+              window.open("https://github.com/j-loup30400", "_blank")
+            }
+            className="footerGit"
+          ></div>
         </div>
       </StyledFooter>
     </>

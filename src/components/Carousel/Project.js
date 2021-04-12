@@ -27,6 +27,7 @@ const StyledCard = styled.div`
     height: 40vw;
     border-radius: 50%;
     left: 30%;
+    top: 5%;
   }
 `;
 const Project = ({ imageNumber }) => {
