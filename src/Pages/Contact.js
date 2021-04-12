@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import emailjs from "emailjs-com";
 
-
 import Modal from "../components/Modal/Modal";
 
 const Move1 = keyframes`
@@ -90,20 +89,22 @@ export const AnimeLarge = styled.div`
   }
 `;
 
-const StyledContact = styled.form`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 82vh;
+const StyledContact = styled.div`
+  width: 100vw;
+  height: 78vh;
   background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
     linear-gradient(360deg, #ffffff -2.86%, rgba(255, 255, 255, 0) 58.69%),
     #fed677;
-
   @media all and (orientation: landscape) {
-    height: 116vh;
-    justify-content: space-around;
+    height: 100vh;
   }
+
+  @media only screen and (min-width: 1023px) and (max-width: 1367px) {
+    height: 106vh;
+
+ 
+  }
+
 
   h1 {
     text-align: center;
@@ -111,14 +112,14 @@ const StyledContact = styled.form`
     font-family: "unpack-regular";
     font-size: 6.89vh;
     color: #0a2268;
-    margin: 0;
+  }
 
-    @media all and (orientation: landscape) {
+  @media all and (orientation: landscape) {
+    h1 {
       text-align: center;
       text-shadow: 2.5px 2.5px #f4c2c2;
       font-size: 4vw;
       color: #0a2268;
-      margin: 0;
     }
   }
 
@@ -133,8 +134,8 @@ const StyledContact = styled.form`
 
     @media all and (orientation: landscape) {
       font-size: 2vw;
-      padding: 8px;
-      width: 22vw;
+      width: 30vw;
+      margin-top: 5%;
     }
   }
   button {
@@ -150,10 +151,16 @@ const StyledContact = styled.form`
     font-family: "poor-story";
     font-size: 5vw;
     z-index: 0;
+    position: absolute;
+    bottom: 10vh;
+    left: 30vw;
     @media all and (orientation: landscape) {
-      margin: 0;
-      width: 15vw;
       font-size: 2vw;
+      bottom: -15vh;
+    }
+
+    @media only screen and (min-width: 1024px) and (max-width: 1366px){
+      bottom: 2vh;
     }
   }
 
@@ -165,11 +172,9 @@ const StyledContact = styled.form`
     font-family: "poor-story";
     font-size: 5vw;
     z-index: 0;
-
     @media all and (orientation: landscape) {
-      width: 25vw;
-      height: 15vw;
       font-size: 2vw;
+      width: 65vw;
     }
   }
 `;
@@ -188,7 +193,6 @@ const StyledFooterContact = styled.div`
     position: relative;
   }
 `;
-
 
 const Contact = () => {
   const [showModal, setShowModal] = useState(false);
@@ -222,30 +226,62 @@ const Contact = () => {
       <AnimeSmall />
       <AnimeMedium />
       <AnimeLarge />
-      <StyledContact onSubmit={sendEmail}>
-        <h1>Say Hello</h1>
-        <label htmlFor="name"></label>
-        <input type="text" name="from_name" placeholder="Your name" required />
-        <label htmlFor="Email"></label>
-        <input type="text" name="Email" placeholder="Your email" required />
-        <label htmlFor="message"></label>
-        <textarea
-          id="message"
-          name="message"
-          placeholder="Your lovely message"
-        ></textarea>
-        <button type="submit" value="Send" onClick={openModal}>
-          Submit
-        </button>
-        <Modal showModal={showModal} setShowModal={setShowModal} />
+      <StyledContact>
+        <form onSubmit={sendEmail}>
+          <h1>Say Hello</h1>
+          <div className="inputContact">
+            <label htmlFor="name"></label>
+            <input
+              type="text"
+              name="from_name"
+              placeholder="Your name"
+              required
+            />
+            <label htmlFor="Email"></label>
+            <input type="text" name="Email" placeholder="Your email" required />
+            <label htmlFor="message"></label>
+          </div>
+          <div className="text">
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your lovely message"
+            ></textarea>
+          </div>
+          <button type="submit" value="Send" onClick={openModal}>
+            Submit
+          </button>
+          <Modal showModal={showModal} setShowModal={setShowModal} />
+        </form>
       </StyledContact>
 
       <StyledFooterContact>
-      <div>
-      <div onClick={() => window.open("https://www.linkedin.com/in/jeanloup-cayuela-467165204/", "_blank")} className="footerLink"></div>   
-            <div onClick={() => window.open("https://drive.google.com/file/d/10b8LNZb_yPAeeXggAkmBR-ARv6w36gBX/view?usp=sharing", "_blank")} className="footerCv"></div>
-            <div onClick={() => window.open("https://github.com/j-loup30400", "_blank")} className="footerGit"></div>
-</div>
+        <div>
+          <div
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/jeanloup-cayuela-467165204/",
+                "_blank"
+              )
+            }
+            className="footerLink"
+          ></div>
+          <div
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/10b8LNZb_yPAeeXggAkmBR-ARv6w36gBX/view?usp=sharing",
+                "_blank"
+              )
+            }
+            className="footerCv"
+          ></div>
+          <div
+            onClick={() =>
+              window.open("https://github.com/j-loup30400", "_blank")
+            }
+            className="footerGit"
+          ></div>
+        </div>
       </StyledFooterContact>
     </div>
   );
