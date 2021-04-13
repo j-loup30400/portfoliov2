@@ -6,9 +6,10 @@ display: flex;
 justify-content: space-evenly;
 align-items: center;
   position: relative;
-  left: 25%;
+  left: 20%;
   top:10%;
   width: 50%;
+  padding: 5vw;
   button:focus {
     outline-style: none;
   }
