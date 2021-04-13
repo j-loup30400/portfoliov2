@@ -65,11 +65,11 @@ const StyledCarousel = styled.div`
   }
 
   @media all and (orientation: landscape) {
-    height: 130vh;
+    height: auto;
   }
 
   @media only screen and (min-width: 1024px) and (max-width: 1366px) {
-    height: 80vh;
+    height: auto;
   }
 `;
 
