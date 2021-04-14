@@ -87,6 +87,15 @@ const StyledFooter = styled.div`
     height: 10vh;
     position: relative;
   }
+  a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 `;
 
 const Home = () => {
@@ -123,30 +132,21 @@ const Home = () => {
       </StyledCarousel>
       <StyledFooter>
         <div>
-          <div
-            onClick={() =>
-              window.open(
-                "https://www.linkedin.com/in/jeanloup-cayuela-467165204/",
-                "_blank"
-              )
-            }
-            className="footerLink"
-          ></div>
-          <div
-            onClick={() =>
-              window.open(
-                "https://drive.google.com/file/d/10b8LNZb_yPAeeXggAkmBR-ARv6w36gBX/view?usp=sharing",
-                "_blank"
-              )
-            }
-            className="footerCv"
-          ></div>
-          <div
-            onClick={() =>
-              window.open("https://github.com/j-loup30400", "_blank")
-            }
-            className="footerGit"
-          ></div>
+          <div className="footerLink">
+            <a
+              href="https://www.linkedin.com/in/jeanloup-cayuela-467165204/"
+              target="_blank"
+            ></a>
+          </div>
+          <div className="footerCv">
+            <a
+              href="https://drive.google.com/file/d/10b8LNZb_yPAeeXggAkmBR-ARv6w36gBX/view?usp=sharing"
+              target="_blank"
+            ></a>
+          </div>
+          <div className="footerGit">
+            <a href="https://github.com/j-loup30400" target="_blank"></a>
+          </div>
         </div>
       </StyledFooter>
     </>

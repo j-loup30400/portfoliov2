@@ -22,6 +22,16 @@ const StyledCard = styled.div`
     align-items: center;
   }
 
+  a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
   @media all and (orientation: landscape) {
     width: 40vw;
     height: 40vw;
@@ -39,15 +49,13 @@ const Project = ({ imageNumber }) => {
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front1"></div>
-                <div
-                  onClick={() =>
-                    window.open(
-                      "https://github.com/j-loup30400/Pick-A-Chew",
-                      "_blank"
-                    )
-                  }
-                  className="flip-card-back1"
-                ></div>
+                <div className="flip-card-back1">
+                  {" "}
+                  <a
+                    href="https://github.com/j-loup30400/Pick-A-Chew"
+                    target="_blank"
+                  ></a>
+                </div>
               </div>
             </div>
           </>
@@ -56,15 +64,12 @@ const Project = ({ imageNumber }) => {
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front2"></div>
-                <div
-                  onClick={() =>
-                    window.open(
-                      "https://github.com/j-loup30400/Code-Caffe",
-                      "_blank"
-                    )
-                  }
-                  className="flip-card-back2"
-                ></div>
+                <div className="flip-card-back2">
+                  <a
+                    href="https://github.com/j-loup30400/Code-Caffe"
+                    target="_blank"
+                  ></a>
+                </div>
               </div>
             </div>
           </>
@@ -73,15 +78,12 @@ const Project = ({ imageNumber }) => {
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front3"></div>
-                <div
-                  onClick={() =>
-                    window.open(
-                      "https://github.com/j-loup30400/Twilio-Hackathon-",
-                      "_blank"
-                    )
-                  }
-                  className="flip-card-back3"
-                ></div>
+                <div className="flip-card-back3">
+                  <a
+                    href="https://github.com/j-loup30400/Twilio-Hackathon-"
+                    target="_blank"
+                  ></a>
+                </div>
               </div>
             </div>
           </>
@@ -90,15 +92,12 @@ const Project = ({ imageNumber }) => {
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front4"></div>
-                <div
-                  onClick={() =>
-                    window.open(
-                      "https://github.com/j-loup30400/Collage-Project",
-                      "_blank"
-                    )
-                  }
-                  className="flip-card-back4"
-                ></div>
+                <div className="flip-card-back4">
+                  <a
+                    href="https://github.com/j-loup30400/Collage-Project"
+                    target="_blank"
+                  ></a>
+                </div>
               </div>
             </div>
           </>
