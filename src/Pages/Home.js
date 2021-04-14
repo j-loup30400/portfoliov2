@@ -69,7 +69,7 @@ const StyledCarousel = styled.div`
   }
 
   @media only screen and (min-width: 1024px) and (max-width: 1366px) {
-    height: 85vh;
+    height: 100vh;
   }
 `;
 
