@@ -102,7 +102,7 @@ const StyledContact = styled.form`
 
   @media all and (orientation: landscape) {
     height: 116vh;
-    justify-content: space-around;
+    justify-content:space-evenly;
   }
 
   h1 {
@@ -151,9 +151,10 @@ const StyledContact = styled.form`
     font-size: 5vw;
     z-index: 0;
     @media all and (orientation: landscape) {
-      margin: 0;
+     margin-top: 5vh;
       width: 15vw;
       font-size: 2vw;
+      
     }
   }
 
@@ -168,7 +169,7 @@ const StyledContact = styled.form`
 
     @media all and (orientation: landscape) {
       width: 25vw;
-      height: 15vw;
+      height: 10vw;
       font-size: 2vw;
     }
   }
@@ -178,6 +179,8 @@ const StyledFooterContact = styled.div`
     #00e8ce;
   width: 100vw;
   height: 10vh;
+  padding-top:2vh;
+  padding-bottom: 2vh;
 
   div {
     display: flex;
@@ -196,6 +199,7 @@ const StyledFooterContact = styled.div`
     right: 0;
     bottom: 0;
   }
+ 
 `;
 
 
@@ -255,16 +259,18 @@ const Contact = () => {
             <a
               href="https://www.linkedin.com/in/jeanloup-cayuela-467165204/"
               target="_blank"
-            ></a>
+              rel="noreferrer"
+            ><span></span></a>
           </div>
           <div className="footerCv">
             <a
               href="https://drive.google.com/file/d/10b8LNZb_yPAeeXggAkmBR-ARv6w36gBX/view?usp=sharing"
               target="_blank"
-            ></a>
+              rel="noreferrer"
+            ><span></span></a>
           </div>
           <div className="footerGit">
-            <a href="https://github.com/j-loup30400" target="_blank"></a>
+            <a href="https://github.com/j-loup30400" target="_blank" rel="noreferrer"><span></span></a>
           </div>
         </div>
       </StyledFooterContact>

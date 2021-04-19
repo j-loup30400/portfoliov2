@@ -15,8 +15,9 @@ const StyledBurgerDesktop = styled.div`
     line-height: 1.59vw;
     text-decoration: none;
     color: #0a2268;
-    padding: 1vw;
+    padding: 2vw;
   }
+ 
 
   @media all and (orientation: portrait) {
     display: none;
@@ -49,6 +50,7 @@ const StyledTitle = styled.div`
     h2 {
       font-size: 3vw;
       line-height: 1.59vw;
+      padding-left: 2vw;
     }
 
     button {
@@ -64,7 +66,9 @@ const Navbar = () => {
     <StyledTitle>
       <Burger modalOpen={modalOpen} setModalOpen={setModalOpen} />
       <Menu modalOpen={modalOpen} setModalOpen={setModalOpen} />
-      <h2>Cayuela Jean-Loup</h2>
+      <div className="name">
+      <h2>Jean-Loup Cayuela</h2>
+      </div>
       <StyledBurgerDesktop>
         <h2>
          

@@ -78,6 +78,8 @@ const StyledFooter = styled.div`
     #00e8ce;
   width: 100vw;
   height: 10vh;
+  padding-top:2vh;
+  padding-bottom: 2vh;
 
   div {
     display: flex;
@@ -110,12 +112,18 @@ const Home = () => {
   return (
     <>
       <StyledAboutContainer>
+        <div className="about">
         <h1>About Me</h1>
         <p>
-          I'm an enthusiastic Junior Front-end Developer with a fine eye for
-          detail, based in London, passionate about coding and UX & UI design.
-          Welcome to my world
+        Hello!
+
+My name is Jean-Loup, born and raised in Southern France. Nowadays I'm living in London, UK. I have changed my career aspiration from working as a mixologist in hospitality to seeking to land my first employment opportunity as a UI and UX Designer or Developer in the tech industry.
+I have recently completed the Wild Code School Web & Mobile Development program in London. I am now looking to bring my passion for coding, as well as UX and UI design, to a full-time position as a Junior Frontend developer.
+
+I am highly-motivated, eager to learn and constantly seeking to improve my skills and knowledge.
+I carry an exceptional ability to adapt to any type of team environment. I am team-oriented and get along well with others when working in a group setting. Feel free to contact me, I look forward to hearing from you.
         </p>
+        </div>
       </StyledAboutContainer>
       <StyledCarousel>
         <h1>Projects</h1>
@@ -136,16 +144,18 @@ const Home = () => {
             <a
               href="https://www.linkedin.com/in/jeanloup-cayuela-467165204/"
               target="_blank"
-            ></a>
+              rel="noreferrer"
+            ><span></span></a>
           </div>
           <div className="footerCv">
             <a
               href="https://drive.google.com/file/d/10b8LNZb_yPAeeXggAkmBR-ARv6w36gBX/view?usp=sharing"
               target="_blank"
-            ></a>
+              rel="noreferrer"
+            ><span></span></a>
           </div>
           <div className="footerGit">
-            <a href="https://github.com/j-loup30400" target="_blank"></a>
+            <a href="https://github.com/j-loup30400" target="_blank" rel="noreferrer"><span></span></a>
           </div>
         </div>
       </StyledFooter>

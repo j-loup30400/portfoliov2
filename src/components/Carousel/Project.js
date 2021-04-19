@@ -54,7 +54,8 @@ const Project = ({ imageNumber }) => {
                   <a
                     href="https://github.com/j-loup30400/Pick-A-Chew"
                     target="_blank"
-                  ></a>
+                    rel="noreferrer"
+                  ><span></span></a>
                 </div>
               </div>
             </div>
@@ -68,7 +69,8 @@ const Project = ({ imageNumber }) => {
                   <a
                     href="https://github.com/j-loup30400/Code-Caffe"
                     target="_blank"
-                  ></a>
+                    rel="noreferrer"
+                  ><span></span></a>
                 </div>
               </div>
             </div>
@@ -82,7 +84,8 @@ const Project = ({ imageNumber }) => {
                   <a
                     href="https://github.com/j-loup30400/Twilio-Hackathon-"
                     target="_blank"
-                  ></a>
+                    rel="noreferrer"
+                  ><span></span></a>
                 </div>
               </div>
             </div>
@@ -96,7 +99,8 @@ const Project = ({ imageNumber }) => {
                   <a
                     href="https://github.com/j-loup30400/Collage-Project"
                     target="_blank"
-                  ></a>
+                    rel="noreferrer"
+                  ><span></span></a>
                 </div>
               </div>
             </div>

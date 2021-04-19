@@ -147,3 +147,8 @@ body {
     background-position: center;
     background-size: contain;
 }
+
+.about{
+   max-width: 1440px
+}
+
