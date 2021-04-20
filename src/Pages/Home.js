@@ -116,12 +116,7 @@ const Home = () => {
         <div className="about">
         <h1>About Me</h1>
         <p>
-        Hello!
-
-My name is Jean-Loup, born and raised in Southern France. Nowadays I'm living in London, UK. I have recently completed the Wild Code School Web & Mobile Development program in London. I am now looking to bring my passion for coding, as well as UX and UI design, to a full-time position as a Junior Frontend developer.
-
-I am highly-motivated, eager to learn and constantly seeking to improve my skills and knowledge.
-I carry an exceptional ability to adapt to any type of team environment. I am team-oriented and get along well with others when working in a group setting. Feel free to contact me, I look forward to hearing from you.
+        Hello, I am Front End Developer currently based in London, UK where I have recently completed the Wild Code School Web & Mobile Development program. I am now looking to bring my passion for coding, as well as UX and UI design, to a full-time position. I am highly motivated, eager to learn, and constantly seeking to improve my skills and knowledge. I carry an exceptional ability to adapt to any type of team environment. I am team-oriented and get along well with others when working in a group setting. Feel free to contact me, I look forward to hearing from you.
         </p>
         </div>
       </StyledAboutContainer>
