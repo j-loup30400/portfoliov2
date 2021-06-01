@@ -94,6 +94,25 @@ const StyledCircleButtonFour = styled.button`
     height: 3vw;
   }
 `;
+const StyledCircleButtonFive = styled.button`
+  border: 0;
+  border-radius: 50%;
+  width: 6vw;
+  height: 6vw;
+  background-color: ${({ isActive }) =>
+    isActive === 4 ? `#FED677` : `#F4C2C2`};
+  transition: all 300ms;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.75;
+  }
+  @media all and (orientation: landscape) {
+    border: 0px;
+    width: 3vw;
+    height: 3vw;
+  }
+`;
 
 
 
@@ -102,13 +121,15 @@ const Selector = ({
   actionTwo,
   actionThree,
   actionFour,
+  actionFive,
   isActive,
 }) => (
   <StyledCircleButtonsContainer>
-    <StyledCircleButton onClick={action} isActive={isActive} aria-label='selec 1' />
-    <StyledCircleButtonTwo onClick={actionTwo} isActive={isActive} aria-label='selec 2' />
-    <StyledCircleButtonThree onClick={actionThree} isActive={isActive} aria-label='selec 3' />
-    <StyledCircleButtonFour onClick={actionFour} isActive={isActive} aria-label='selec 4' />
+    <StyledCircleButton onClick={action} isActive={isActive} aria-label='selec 1'/>
+    <StyledCircleButtonTwo onClick={actionTwo} isActive={isActive} aria-label='selec 2'/>
+    <StyledCircleButtonThree onClick={actionThree} isActive={isActive} aria-label='selec 3'/>
+    <StyledCircleButtonFour onClick={actionFour} isActive={isActive} aria-label='selec 4'/>
+    <StyledCircleButtonFive onClick={actionFive} isActive={isActive} aria-label='selec 5'/>
   </StyledCircleButtonsContainer>
 );
 

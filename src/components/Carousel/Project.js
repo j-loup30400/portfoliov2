@@ -105,6 +105,22 @@ const Project = ({ imageNumber }) => {
               </div>
             </div>
           </>
+        )
+        : imageNumber === 4 ? (
+          <>
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front5"></div>
+                <div className="flip-card-back5">
+                  <a
+                    href="https://github.com/j-loup30400/Collage-Project"
+                    target="_blank"
+                    rel="noreferrer"
+                  ><span></span></a>
+                </div>
+              </div>
+            </div>
+          </>
         ) : null}
       </div>
     </StyledCard>

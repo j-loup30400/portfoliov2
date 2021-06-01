@@ -48,7 +48,9 @@ body {
 .flip-card-front3,
 .flip-card-back3,
 .flip-card-front4,
-.flip-card-back4
+.flip-card-back4,
+.flip-card-front5,
+.flip-card-back5
  {
   position: absolute;
   width: 100%;
@@ -84,6 +86,12 @@ body {
   background-position: center;
   background-size: contain;
 }
+.flip-card-front5{
+  background-image: url("./Images/collage.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
 
 
 
@@ -113,6 +121,14 @@ body {
 }
 
 .flip-card-back4 {
+  transform: rotateY(180deg);
+  background-image: url("./Images/reverseCollage.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.flip-card-back5 {
   transform: rotateY(180deg);
   background-image: url("./Images/reverseCollage.png");
   background-repeat: no-repeat;
