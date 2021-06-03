@@ -87,7 +87,7 @@ body {
   background-size: contain;
 }
 .flip-card-front5{
-  background-image: url("./Images/collage.png");
+  background-image: url("./Images/Who.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -130,7 +130,7 @@ body {
 
 .flip-card-back5 {
   transform: rotateY(180deg);
-  background-image: url("./Images/reverseCollage.png");
+  background-image: url("./Images/ReverseWho.pngo");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

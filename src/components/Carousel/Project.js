@@ -113,7 +113,7 @@ const Project = ({ imageNumber }) => {
                 <div className="flip-card-front5"></div>
                 <div className="flip-card-back5">
                   <a
-                    href="https://github.com/j-loup30400/Collage-Project"
+                    href="https://www.figma.com/file/UN1KwT5YQrTMWJGYC7kEYS/Who's-that-pokemon"
                     target="_blank"
                     rel="noreferrer"
                   ><span></span></a>

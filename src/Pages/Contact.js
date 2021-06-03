@@ -264,7 +264,7 @@ const Contact = () => {
           </div>
           <div className="footerCv">
             <a
-              href="https://drive.google.com/file/d/10b8LNZb_yPAeeXggAkmBR-ARv6w36gBX/view?usp=sharing"
+              href="https://drive.google.com/file/d/1qHC2ncj99SD__qZxwHbzHdG_5bPcF_ff/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             ><span></span></a>
