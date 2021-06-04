@@ -130,7 +130,7 @@ body {
 
 .flip-card-back5 {
   transform: rotateY(180deg);
-  background-image: url("./Images/ReverseWho.pngo");
+  background-image: url("./Images/ReverseWho.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
