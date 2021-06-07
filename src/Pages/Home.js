@@ -70,7 +70,6 @@ const StyledCarousel = styled.div`
 
   @media only screen and (min-width: 1024px) and (max-width: 1366px) {
     height: 100vh;
-    
   }
 `;
 
@@ -79,7 +78,7 @@ const StyledFooter = styled.div`
     #00e8ce;
   width: 100vw;
   height: 10vh;
-  padding-top:2vh;
+  padding-top: 2vh;
   padding-bottom: 2vh;
 
   div {
@@ -110,15 +109,22 @@ const Home = () => {
   const fourthImageToggle = () => setCarouselImage(3);
   const fifthImageToggle = () => setCarouselImage(4);
 
-
   return (
     <>
       <StyledAboutContainer>
         <div className="about">
-        <h1>About Me</h1>
-        <p>
-         Hello, I am Front End Developer currently based in London, UK where I have recently completed the Wild Code School Web & Mobile Development program. {/*I am now looking to bring my passion for coding, as well as UX and UI design, to a full-time position. I am highly motivated, eager to learn, and constantly seeking to improve my skills and knowledge. I carry an exceptional ability to adapt to any type of team environment. I am team-oriented and get along well with others when working in a group setting. Feel free to contact me, I look forward to hearing from you. */}
-        </p>
+          <h1>About Me</h1>
+          <p>
+          Hello, I am a Front End Developer currently based in London, UK.
+I recently completed a Web and Mobile Development Program at the Wild Code School. 
+The course allowed me to translate my passion for video games, Esport and anime culture into the development of innovative Apps. 
+ 
+I am looking to strengthen my technical skills and if you are looking for someone with a creative flair and the desire to eat the world contact me. 
+In addition to my work ethic, I come fully equipped with Geekiness, YouTube trends and catchy playlist.
+I am highly motivated, eager to learn, and constantly seeking to improve my skills and knowledge, that as of now are only at the beginning of their full potential.
+I look forward to hearing from you.
+
+          </p>
         </div>
       </StyledAboutContainer>
       <StyledCarousel>
@@ -141,17 +147,27 @@ const Home = () => {
               href="https://www.linkedin.com/in/jeanloup-cayuela-467165204/"
               target="_blank"
               rel="noreferrer"
-            ><span></span></a>
+            >
+              <span></span>
+            </a>
           </div>
           <div className="footerCv">
             <a
               href="https://drive.google.com/file/d/1qHC2ncj99SD__qZxwHbzHdG_5bPcF_ff/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
-            ><span></span></a>
+            >
+              <span></span>
+            </a>
           </div>
           <div className="footerGit">
-            <a href="https://github.com/j-loup30400" target="_blank" rel="noreferrer"><span></span></a>
+            <a
+              href="https://github.com/j-loup30400"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span></span>
+            </a>
           </div>
         </div>
       </StyledFooter>
